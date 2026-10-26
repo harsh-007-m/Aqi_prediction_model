@@ -4,7 +4,7 @@ Predicting the AQI of Indian cities using linear regression
 ## Overview
 This project process real-world environmental monitoring data to forecast air quality. It handles data cleaning, feature engineering, one-hot encoding and trains a Linear Regression Model. The model is used to predict AQI across 10 major cities using environmental pollutant levels and temporal data.
 
-## 🛠️ Tech Stack
+## Tech Stack
 * **Language:** Python
 * **Libraries:** Pandas, Scikit-Learn, Joblib
 * **Model:** Linear Regression
