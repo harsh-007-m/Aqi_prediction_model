@@ -29,9 +29,8 @@ The Dataset was taken from Kaggle and was initially named "india_city_aqi_2015_2
 - **Categorical Encoding:** One-hot encoded the `city` column using `pd.get_dummies()` (with `drop_first=True`) to prevent multicollinearity and handle regional baseline shifts.
 
 ## Insights and Findings  
-**Unusually High Accuracy:** The model achieved an exceptional $R^2$ score of **0.9999** during evaluation. 
+- **Unusually High Accuracy:** The model achieved an exceptional $R^2$ score of **0.9999** during evaluation. 
 - **The Underlying Formula:** By inspecting the model's feature coefficients, we discovered exact weights (e.g., ~0.5 for PM2.5, ~0.3 for PM10, ~0.1 for O3 and NO2). This revealed that the dataset's AQI values were synthetically derived from a direct, clean linear combination of the pollutant features rather than random natural variance, allowing the Linear Regression model to successfully reverse-engineer the governing math formula.
-- 
 ## Results
 * **Accuracy:** Achieved an $R^2$ score of **0.9999** and a minimal Mean Squared Error (MSE) of **0.08**.
 * **Feature Importance Analysis:** Uncovered that particulate matter (`PM2.5` and `PM10`) serves as the primary driver behind AQI calculations.
